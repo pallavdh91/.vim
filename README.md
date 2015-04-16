@@ -5,7 +5,7 @@ Likely does not support older versions of vim. It is recommended to have the lat
 
 1. Clone the repository
     
-        $ git clone git://github.paypal.com/traibhandare/.vim.git ~/.vim
+        $ git clone git://github.com/traib/.vim.git ~/.vim
         $ ln -s ~/.vim/vimrc ~/.vimrc
         $ ln -s ~/.vim/gvimrc ~/.gvimrc
 
@@ -14,3 +14,5 @@ Likely does not support older versions of vim. It is recommended to have the lat
         $ cd ~/.vim/
         $ sh ./plugins.sh
     Additional plugins can listed in the plugins.sh file, please see the source for more details.
+
+Note: Configuration will not load properly if the repository is not cloned into `~/.vim`
