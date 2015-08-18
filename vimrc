@@ -242,7 +242,7 @@ set foldcolumn=1        " use these many columns to indicate folds
 set foldopen+=jump      " also open folds if the cursor jumps inside
 nnoremap <Space> za
 
-function! CustomFoldText()
+function! FoldText()
   let fs = v:foldstart
   while getline(fs) =~ '^\s*$' | let fs = nextnonblank(fs + 1)
   endwhile
@@ -261,7 +261,7 @@ function! CustomFoldText()
   let expansionString = repeat(" ", w - strwidth(foldSizeStr.line.foldLevelStr.foldPercentage))
   return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
 endfunction
-set foldtext=CustomFoldText()
+set foldtext=FoldText()
 
 let c_no_comment_fold=1
 autocmd Vimrc FileType c setlocal foldmethod=syntax
