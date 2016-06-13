@@ -5,7 +5,7 @@ Likely does not support older versions of vim. It is recommended to have the lat
 
 1. Clone the repository
     
-        $ git clone git://github.com/traib/.vim.git ~/.vim
+        $ git clone git://github.com/pallavdh91/.vim.git ~/.vim
 
 2. Use `setup.sh` for both installation and update, of symlinks and plugins
         
